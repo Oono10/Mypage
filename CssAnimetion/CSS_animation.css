@@ -1,0 +1,134 @@
+body{
+  font-family: "Avenir Next";
+  background-color: #cccccc;}
+
+/*---------------------.box0--------------------*/
+.box0{
+  background-color: #999999;
+  height:auto;
+}
+/*--------------Title--------------*/
+.title{
+  margin:10px,0;
+  border:0;
+  padding:0;
+  font-size:50px;
+  text-align: center;
+}
+/*--------------menu--------------*/
+.menu ul{margin:0;
+  padding:0;
+  list-style:none;}
+.menu:after{content:"";
+  display:block;
+  clear:both;}
+.menu li a{display:block;
+  padding:5px 20px;font-size:20px;
+  text-decoration:none;color:#ffffff;text-align:center;}
+.menu li{float:left;width:auto;}
+.menu{background-color:#333333;}
+/*---------------------.box1--------------------*/
+
+.text1{
+height:auto;
+margin:0;
+padding-top:30px;/*上の謎スペース消し*/
+padding-bottom:30px;/*下の謎スペース消し*/
+padding-left: 5%;padding-right: 5%;
+background-color:#999999;
+
+font-size:15px;
+color:#ffffff;
+transition: all 500ms 0s ease;}
+
+.text1 a{
+  color:#ffffff;  
+  transition: all 200ms 0s ease;}
+
+.text1 a:hover{
+  color:#333333;
+  font-size:20px;}
+
+/*---------------------.box2--------------------*/
+.text2{
+height:auto;margin:0;
+padding-top:30px;padding-bottom:30px;/*上下の謎スペース消し*/
+padding-left: 5%;padding-right: 5%;
+background-color:#ffffff;
+transition: all 500ms 0s ease;}
+.text2:hover{background-color:#333333;}
+
+.text2 h2{
+  font-size:20px;
+  color:#ffffff;}
+.text2 p{
+  font-size:15px;
+  color:#ffffff;}
+/*---------------------.box3--------------------*/
+.box3{
+height:auto;
+margin:0;
+padding-top:30px;/*上の謎スペース消し*/
+padding-bottom:10px;/*下の謎スペース消し*/
+padding-left: 5%;padding-right: 5%;
+background-color:#999999;}
+.box3 h3{
+  font-size:20px;
+  color:#ffffff;}
+.box3 p{
+  font-size:15px;
+  color:#ffffff;}
+.A3{
+  background-color:#d14444;
+  height:50px;
+  width:100px;
+  transition: all 500ms 0s ease;
+}
+.A3:hover{
+  background-color:#d14444;
+  width:200px;
+  letter-spacing: 10px;/*文字の間隔調整*/
+}
+.A3 p{
+  text-align: center;
+  padding-top:20px;
+  font-size:10px;
+  color:#ffffff;
+}
+/*---------------------.box4--------------------*/
+.box4{
+  background-color: #999999;
+  height:auto;}
+
+.box4:after{/*BOX,A,B,Cを横に並べる設定*/
+  content:"";
+  display: block;
+  clear: both;
+}
+.A{
+  float:left;
+  width:30%;
+  background-color: #ffffff;
+  color:#ffffff;
+  transition: all 500ms 0s ease;
+} 
+
+.B{
+  float:left;
+  width:40%;
+  background-color: #ffffff;
+  color:#ffffff;
+  transition: all 500ms 0s ease;
+}
+
+.C{
+  float:left;
+  width:30%;
+  background-color: #ffffff;
+  color:#ffffff;
+  transition: all 500ms 0s ease;
+}
+
+.A:hover{background-color:#333333;}
+.B:hover{background-color:#333333;}
+.C:hover{background-color:#333333;}
