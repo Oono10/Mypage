@@ -29,7 +29,7 @@ body{
 .menu{background-color:#333333;}
 /*---------------------.box1--------------------*/
 
-.text1{
+.box1{
 height:auto;
 margin:0;
 padding-top:30px;/*上の謎スペース消し*/
@@ -41,11 +41,11 @@ font-size:15px;
 color:#ffffff;
 transition: all 500ms 0s ease;}
 
-.text1 a{
+.box1 a{
   color:#ffffff;  
   transition: all 200ms 0s ease;}
 
-.text1 a:hover{
+.box1 a:hover{
   color:#333333;
   font-size:20px;}
 
@@ -97,38 +97,65 @@ background-color:#999999;}
 }
 /*---------------------.box4--------------------*/
 .box4{
-  background-color: #999999;
-  height:auto;}
+  height:auto;
+  padding-top:30px;/*上の謎スペース消し*/
+  padding-bottom:10px;/*下の謎スペース消し*/
+  padding-left: 5%;padding-right: 5%;
+  background-color: #333333;
 
-.box4:after{/*BOX,A,B,Cを横に並べる設定*/
-  content:"";
+  color:#ffffff;
+}
+
+.box4 a{
+  color:#ffffff;  
+  transition: all 200ms 0s ease;}
+
+.box4 a:hover{
+  font-size:20px;}
+
+
+/*ボックス全体*/
+.accbox {
+  margin: 2em 0;
+  padding: 0;
+  max-width: 400px;/*最大幅*/
+}
+
+/*ラベル*/
+.accbox label {
   display: block;
-  clear: both;
-}
-.A{
-  float:left;
-  width:30%;
-  background-color: #ffffff;
-  color:#ffffff;
-  transition: all 500ms 0s ease;
-} 
-
-.B{
-  float:left;
-  width:40%;
-  background-color: #ffffff;
-  color:#ffffff;
-  transition: all 500ms 0s ease;
+  margin: 20px 10px;
+  padding : 11px 12px;
+  color :#2f8fcf;
+  font-weight: bold;
+  background :#a4cbf3;
+  cursor :pointer;
+  transition: all 0.5s;
 }
 
-.C{
-  float:left;
-  width:30%;
-  background-color: #ffffff;
-  color:#ffffff;
-  transition: all 500ms 0s ease;
+/*ラベルホバー時*/
+.accbox label:hover {
+  background :#85baef;
 }
 
-.A:hover{background-color:#333333;}
-.B:hover{background-color:#333333;}
-.C:hover{background-color:#333333;}
+/*チェックは隠す*/
+.accbox input {
+  display: none;
+}
+
+/*中身を非表示にしておく*/
+.accbox .accshow {
+  height: 0;
+  padding: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/*クリックで中身表示*/
+.cssacc:checked + .accshow {
+  height: auto;
+  padding: 5px;
+  background: #eaeaea;
+  opacity: 1;
+}

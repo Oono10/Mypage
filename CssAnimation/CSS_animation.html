@@ -21,8 +21,8 @@
  </div>
 
 
- <div class="box1">
-  <div class="text1">
+
+  <div class="box1">
    <h1>はじめに。</h1>
    <P>最近のwebサイトはアニメーションが入っているものが多く、僕もその流行に便乗したく学び始めました。
      まずは、マウスオーバーをトリガとしたAnimationをしてみました。文字の色や大きさ、背景色を変えてみました。
@@ -36,7 +36,7 @@
       ↓使用例↓
    </p>
   </div>
- </div>
+
 
  
  <div class="box2">
@@ -52,15 +52,37 @@
    </div>
  </div>
 
-<div class="box3"><h3>動く編</h3>
-　<p>文字の大きさを変える同様、画像の大きさを変えて変えました。widthの設定を変更するだけ。ついでに、文字の間隔(letter-spacing)も変更してみました。かわいい。</p>
+  <div class="box3"><h3>動く編</h3>
+　 <p>文字の大きさを変える同様、画像の大きさを変えて変えました。widthの設定を変更するだけ。
+  ついでに、文字の間隔(letter-spacing)も変更してみました。かわいい。</p>
   <div class="A3"><p>にょぃーん。</p></div>
-</div>
+  </div>
 
- <div class="box4">
-    <div class="A"><p>a</p></div>
-    <div class="B"><p>b</p></div>
-    <div class="C"><p>c</p></div>
+
+ <div class="box4"><h3>CSSアコーディオン</h3>
+  <p>CSSだけで、アコーディオンを作ってみました。仕組みはinputタグをトリガーにして、適用するCSSを変更しています。
+    CSSセレクタなんぞ？→以下参考サイトです。
+  </p>
+  <UL>
+  　<li><a href="http://www.htmq.com/html5/label.shtml">★HTML5タグリファレンス</a></li>
+    <li><a href="https://saruwakakun.com/html-css/reference/selector">CSSセレクタについて。</a></li>
+  </UL>
+  
+  <h3>まずはLabel編</h3>
+  <p>CssのLabelタグについて。Labelタグとは、フォーム部品(今回はチェックボックス)と、項目名の間を取り持ってくれます。
+    フォーム部品以外にも関連付けることができるので、やってみました。</p>
+    
+  
+  <div class="accbox">
+        <label for="label1">クリックして表示1</label>
+        <input type="checkbox" id="label1" class="cssacc" />
+        <div class="accshow">
+          <p>こんにちは1</p>
+        </div>
+    </div>
  </div>
- </body>
+
+
+
+</body>
 </html>
