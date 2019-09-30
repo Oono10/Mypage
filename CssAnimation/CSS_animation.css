@@ -153,49 +153,45 @@ background-color:#999999;}
 .box4 a:hover{
   font-size:20px;}
 
+.Mon{border:dotted #ffffff;
+  text-align: center;
+}  
 
-/*ボックス全体*/
-.accbox {
-  margin: 2em 0;
-  padding: 0;
-  max-width: 400px;/*最大幅*/
+
+.check{display: none;/*チェックbox隠してます。*/
 }
 
-/*ラベル*/
-.accbox label {
+.label{
+  padding: 10px;
+  margin-left:25%;
+  max-width:400px;
+  background-color:#888888;
+  color: #fff;
   display: block;
-  margin: 20px 10px;
-  padding : 11px 12px;
-  color :#2f8fcf;
-  font-weight: bold;
-  background :#a4cbf3;
-  cursor :pointer;
-  transition: all 0.5s;
+  text-align: center;
+
 }
 
-/*ラベルホバー時*/
-.accbox label:hover {
-  background :#85baef;
+.label:hover{
+  background-color: #d14444
 }
 
-/*チェックは隠す*/
-.accbox input {
-  display: none;
-}
+.acd-text{
+    height:0;
+    max-width:400px;
 
-/*中身を非表示にしておく*/
-.accbox .accshow {
-  height: 0;
-  padding: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: 0.8s;
+    opacity: 0;
+    transition: .5s;
+    text-align: center;
+    visibility: hidden;
 }
-
-/*クリックで中身表示*/
-.cssacc:checked + .accshow {
-  height: auto;
-  padding: 5px;
-  background: #eaeaea;
+.check:checked + .label + .acd-text{
+  height:auto;
+  max-width:400px;
+  margin-left:25%;
   opacity: 1;
+  text-align: center;
+  visibility: visible;
+   
+
 }

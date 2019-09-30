@@ -62,29 +62,37 @@
 
 
  <div class="box4"><h3>CSSアコーディオン</h3>
-  <p>CSSだけで、アコーディオンを作ってみました。仕組みはinputタグをトリガーにして、適用するCSSを変更しています。
-    CSSセレクタなんぞ？→以下参考サイトです。
-  </p>
-  <UL>
+   <p>CSSだけで、アコーディオンを作ってみました。仕組みはinputタグをトリガーにして、適用するCSSを変更しています。
+    タグとセレクタについてのリンク。↓
+   </p>
+   <UL>
   　<li><a href="http://www.htmq.com/html5/label.shtml">★HTML5タグリファレンス</a></li>
     <li><a href="https://saruwakakun.com/html-css/reference/selector">CSSセレクタについて。</a></li>
-  </UL>
+   </UL>
   
-  <h3>まずはLabel編</h3>
-  <p>CssのLabelタグについて。Labelタグとは、フォーム部品(今回はチェックボックス)と、項目名の間を取り持ってくれます。
-    フォーム部品以外にも関連付けることができるので、やってみました。</p>
-    
-  
-  <div class="accbox">
-        <label for="label1">クリックして表示1</label>
-        <input type="checkbox" id="label1" class="cssacc" />
-        <div class="accshow">
-          <p>こんにちは1</p>
-        </div>
+  <div class="Mon">
+   <h3>問題</h3>
+   <p>Q.相撲の土俵の下に埋められている食べ物はどれ？</p>
+
+    <input class="check" id="check1" type="checkbox">
+    <label class="label" for="check1">1.そもそも、何も埋まってない。</label>
+    <div class="acd-text">
+        <p>A.埋まっていなかったら問題にしません。小学校からやり直してきてください。</p>
     </div>
+  
+    <input class="check" id="check2" type="checkbox">
+    <label class="label" for="check2">2.亀さん</label>
+    <div class="acd-text">
+        <p>A.ちがうよ</p>
+    </div>
+
+    <input class="check" id="check3" type="checkbox">
+    <label class="label" for="check3">3.スルメ</label>
+    <div class="acd-text">
+      <h3>正解！！</h3><br><p>A.天才！！ひゅーひゅー。他にも昆布や米などが神さまへの供え物として埋められているよ、ッキャッキャ。</p>
+    </div>
+  </div>
  </div>
-
-
-
+</div>
 </body>
 </html>
